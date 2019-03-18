@@ -1,0 +1,58 @@
+.crypto-list
+  background: white
+  min-height: 90vh
+  border-radius: 5px
+  overflow: hidden
+  .crypto-table
+    width: 100%
+    border-collapse: collapse
+    .rank-column
+      text-align: center
+    .number-column
+      text-align: right
+      .symbol
+        padding-left: 5px
+      &.percent-change-column-header
+        display: flex
+        justify-content: flex-end
+    .crypto-name
+      display: flex
+      align-items: center
+      img
+        margin-right: 1em
+    .percent-change-column
+      .percent-change
+        justify-content: center
+    .percent-change
+      display: flex
+      align-items: center
+      .icon-arrow-wrapper
+        flex: 0 0 auto
+        margin-left: 40%
+        &.turn-down
+          display: inline-block
+          transform: rotate(180deg)
+          .icon-arrow
+            color: #E71d36
+        .icon-arrow
+          color: #688e26
+      .percent-change-wrapper
+        padding-left: 5px
+        flex: 1 0 auto
+        text-align: right
+    thead
+      font-weight: bold
+      background: #2e294e
+      color: white
+      th
+        padding: 1em 1em
+        cursor: pointer
+
+    tbody
+      tr
+        &:hover
+          background: #E0F4FF
+      td
+        border-bottom: 1px solid lightgray
+    td
+      padding: 0.5em
